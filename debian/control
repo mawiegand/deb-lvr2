@@ -10,8 +10,8 @@ Build-Depends: debhelper (>= 10), cmake, libopencv-dev (>= 3.2),
 Standards-Version: 4.1.2
 Section: libs
 Homepage: http://www.las-vegas.uni-osnabrueck.de
-#Vcs-Git: https://anonscm.debian.org/git/collab-maint/lvr2.git
-#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/lvr2.git
+#Vcs-Git: https://github.com/uos/lvr2.git
+#Vcs-Browser: https://github.com/uos/lvr2
 
 Package: lvr2-bin
 Architecture: any
