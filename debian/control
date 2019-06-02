@@ -15,7 +15,8 @@ Homepage: http://www.las-vegas.uni-osnabrueck.de
 
 Package: lvr2-bin
 Architecture: any
-Depends: liblvr2 (= ${binary:Version}), ${misc:Depends}
+Depends: liblvr2 (= ${binary:Version}), ${misc:Depends},
+ ${shlibs:Depends}
 Description: LVR2 binary package
  This package contains the executables of LVR2.
 
