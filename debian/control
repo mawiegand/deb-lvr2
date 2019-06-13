@@ -25,6 +25,7 @@ Section: libdevel
 Architecture: any
 Multi-Arch: same
 Depends: liblvr2 (= ${binary:Version}), ${misc:Depends}
+Suggests: lvr2-bin
 Description: LVR2 development package
  This package contains the header files of LVR2 for development.
 
@@ -32,5 +33,6 @@ Package: liblvr2
 Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: lvr2-bin
 Description: LVR2 library package
  This package contains the shared library files of LVR2.
