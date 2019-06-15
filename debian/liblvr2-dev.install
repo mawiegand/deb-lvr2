@@ -1,6 +1,13 @@
+#!/usr/bin/dh-exec
 usr/include/*
 usr/lib/*/lib*.a
 #usr/lib/*/lib*.so
 #usr/lib/*/pkgconfig/*
 #usr/share/pkgconfig/*
-#usr/lib/pkgconfig/*
+usr/lib/pkgconfig/*
+usr/lib/draco/*
+usr/share/HighFive/*
+
+# cmake
+usr/lib/cmake/* usr/lib/${DEB_HOST_MULTIARCH}/cmake
+usr/lib/*/cmake/*

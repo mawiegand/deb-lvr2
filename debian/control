@@ -1,9 +1,10 @@
 Source: lvr2
 Priority: optional
 Maintainer: Marcel Wiegand <wiegand@linux.com>
-Build-Depends: debhelper (>= 10), cmake, libopencv-dev (>= 3.2),
- libflann-dev, liblz4-dev, libgsl-dev, libeigen3-dev, libvtk6-qt-dev,
- libboost-dev, libboost-filesystem-dev, libboost-program-options-dev,
+Build-Depends: dh-exec (>= 0.3), debhelper (>= 10), cmake,
+ libopencv-dev (>= 3.2),  libflann-dev, liblz4-dev, libgsl-dev,
+ libeigen3-dev, libvtk6-qt-dev, libboost-dev,
+ libboost-filesystem-dev, libboost-program-options-dev,
  libboost-thread-dev, libboost-mpi-dev, libboost-system-dev,
  libboost-timer-dev, libboost-iostreams-dev, libboost-test-dev,
  freeglut3-dev, libproj-dev, ocl-icd-opencl-dev, opencl-c-headers
