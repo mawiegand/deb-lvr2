@@ -1,3 +1,15 @@
+lvr2 (19.05.0-0ubuntu2) bionic; urgency=medium
+
+  * d/rules:
+    + Increase verbosity.
+  * d/control:
+    + Add suggestions for lvr2-bin to liblvr2(-dev) packages.
+    + Add dh-exec dependency (to enable DEB_HOST_MULTIARCH in install).
+  * d/liblvr2-dev:
+    + Fix missing cmake files.
+
+ -- Marcel Wiegand <wiegand@linux.com>  Sat, 15 Jun 2019 15:42:24 +0200
+
 lvr2 (19.05.0-0ubuntu1) bionic; urgency=medium
 
   * Initial release.
