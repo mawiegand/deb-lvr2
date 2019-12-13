@@ -15,18 +15,17 @@ Homepage: http://www.las-vegas.uni-osnabrueck.de
 Vcs-Git: https://github.com/mawiegand/deb-lvr2.git
 Vcs-Browser: https://github.com/mawiegand/deb-lvr2
 
-Package: lvr2-bin
-Architecture: any
-Depends: liblvr2 (= ${binary:Version}), ${misc:Depends},
- ${shlibs:Depends}
-Description: LVR2 binary package
- This package contains the executables of LVR2.
-
 Package: liblvr2-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
-Depends: liblvr2 (= ${binary:Version}), ${misc:Depends}
+Depends: cmake, libopencv-dev (>= 3.2), libflann-dev, liblz4-dev,
+ libgsl-dev, libeigen3-dev, libvtk6-qt-dev, libboost-dev,
+ libboost-filesystem-dev, libboost-program-options-dev,
+ libboost-thread-dev, libboost-mpi-dev, libboost-system-dev,
+ libboost-timer-dev, libboost-iostreams-dev, libboost-test-dev,
+ freeglut3-dev, libproj-dev, ocl-icd-opencl-dev, opencl-c-headers,
+ liblvr2 (= ${binary:Version}), ${misc:Depends}
 Suggests: lvr2-bin
 Description: LVR2 development package
  This package contains the header files of LVR2 for development.
@@ -38,3 +37,40 @@ Depends: ${shlibs:Depends}, ${misc:Depends}
 Suggests: lvr2-bin
 Description: LVR2 library package
  This package contains the shared library files of LVR2.
+
+Package: lvr2-bin
+Architecture: any
+Depends: lvr2-bin-opencl | lvr2-bin-cuda, liblvr2 (= ${binary:Version}),
+ ${shlibs:Depends}, ${misc:Depends}
+Description: LVR2 binary package
+ This package contains the executables of LVR2.
+
+Package: lvr2-bin-opencl
+Architecture: any
+Depends: liblvr2 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Description: LVR2-OpenCL binary package
+ This package contains the executables of LVR2 with OpenCL support.
+
+Package: liblvr2-cuda-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: liblvr2-cuda (= ${binary:Version}), ${misc:Depends},
+ nvidia-cuda-toolkit
+Suggests: lvr2-bin-cuda
+Description: LVR2-CUDA development package
+ This package contains the header files of LVR2 for development with CUDA support.
+
+Package: liblvr2-cuda
+Architecture: any
+Multi-Arch: same
+Depends: liblvr2 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Suggests: lvr2-bin-cuda
+Description: LVR2-CUDA library package
+ This package contains the shared library files of LVR2 with CUDA support.
+
+Package: lvr2-bin-cuda
+Architecture: any
+Depends: liblvr2-cuda (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Description: LVR2-CUDA binary package
+ This package contains the executables of LVR2 with CUDA support.
