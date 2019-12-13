@@ -7,7 +7,8 @@ Build-Depends: dh-exec (>= 0.3), debhelper (>= 10), cmake,
  libboost-filesystem-dev, libboost-program-options-dev,
  libboost-thread-dev, libboost-mpi-dev, libboost-system-dev,
  libboost-timer-dev, libboost-iostreams-dev, libboost-test-dev,
- freeglut3-dev, libproj-dev, ocl-icd-opencl-dev, opencl-c-headers
+ freeglut3-dev, libproj-dev, ocl-icd-opencl-dev, opencl-c-headers,
+ nvidia-cuda-toolkit
 Standards-Version: 4.1.2
 Section: libs
 Homepage: http://www.las-vegas.uni-osnabrueck.de
