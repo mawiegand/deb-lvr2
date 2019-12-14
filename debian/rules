@@ -39,5 +39,4 @@ override_dh_auto_clean:
 	dh_auto_clean --builddirectory=build-cuda
 
 override_dh_missing:
-	dh_missing --list-missing --builddirectory=build
-	dh_missing --list-missing --builddirectory=build-cuda
+	dh_missing --list-missing
