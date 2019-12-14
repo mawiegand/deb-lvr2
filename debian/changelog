@@ -1,6 +1,16 @@
 lvr2 (19.12.0-0ubuntu1) UNRELEASED; urgency=medium
 
   * New upstream release 19.12.0-0ubuntu1.
+  * Add CUDA support.
+  * Remove draco dependency.
+  * d/control:
+    + Adjust VCS links.
+    + Add packages with CUDA support.
+  * d/rules:
+    + Add build steps for CUDA support.
+  * d/patches/:
+    + Add cuda-option.patch to add CUDA disable option in CMAKE.
+    * Add fix-find-lz4.patch.
 
  -- Marcel Wiegand <wiegand@linux.com>  Wed, 11 Dec 2019 23:17:02 +0100
 
