@@ -1,4 +1,4 @@
-lvr2 (19.12.0-0ubuntu1) UNRELEASED; urgency=medium
+lvr2 (19.12.0-0ubuntu1) bionic; urgency=medium
 
   * New upstream release 19.12.0-0ubuntu1.
   * Add CUDA support.
@@ -12,7 +12,7 @@ lvr2 (19.12.0-0ubuntu1) UNRELEASED; urgency=medium
     + Add cuda-option.patch to add CUDA disable option in CMAKE.
     * Add fix-find-lz4.patch.
 
- -- Marcel Wiegand <wiegand@linux.com>  Wed, 11 Dec 2019 23:17:02 +0100
+ -- Marcel Wiegand <wiegand@linux.com>  Sat, 14 Dec 2019 03:10:18 +0100
 
 lvr2 (19.05.0-0ubuntu2) bionic; urgency=medium
 
