@@ -61,7 +61,7 @@ Depends: cmake, libopencv-dev (>= 3.2), libflann-dev, liblz4-dev,
  libboost-timer-dev, libboost-iostreams-dev, libboost-test-dev,
  freeglut3-dev, libproj-dev, ocl-icd-opencl-dev, opencl-c-headers,
  nvidia-cuda-toolkit, liblvr2 (= ${binary:Version}), ${misc:Depends}
-Suggests: lvr2-bin-cuda
+Suggests: lvr2-cuda-bin
 Conflicts: liblvr2-dev
 Replaces: liblvr2-dev
 Description: LVR2-CUDA development package
@@ -73,11 +73,11 @@ Multi-Arch: same
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Conflicts: liblvr2
 Replaces: liblvr2
-Suggests: lvr2-bin-cuda
+Suggests: lvr2-cuda-bin
 Description: LVR2-CUDA library package
  This package contains the shared library files of LVR2 with CUDA support.
 
-Package: lvr2-bin-cuda
+Package: lvr2-cuda-bin
 Architecture: any
 Depends: liblvr2-cuda (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
 Conflicts: lvr2-bin
