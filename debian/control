@@ -65,7 +65,8 @@ Suggests: lvr2-cuda-bin
 Conflicts: liblvr2-dev
 Replaces: liblvr2-dev
 Description: LVR2-CUDA development package
- This package contains the header files of LVR2 for development with CUDA support.
+ This package contains the header files of LVR2 for development with
+ CUDA support.
 
 Package: liblvr2-cuda
 Architecture: any
