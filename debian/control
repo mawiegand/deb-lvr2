@@ -60,7 +60,8 @@ Depends: cmake, libopencv-dev (>= 3.2), libflann-dev, liblz4-dev,
  libboost-thread-dev, libboost-mpi-dev, libboost-system-dev,
  libboost-timer-dev, libboost-iostreams-dev, libboost-test-dev,
  freeglut3-dev, libproj-dev, ocl-icd-opencl-dev, opencl-c-headers,
- nvidia-cuda-toolkit, libyaml-cpp-dev, liblvr2 (= ${binary:Version}), ${misc:Depends}
+ nvidia-cuda-toolkit, libyaml-cpp-dev, liblvr2-cuda (= ${binary:Version}),
+ ${misc:Depends}
 Suggests: lvr2-cuda-bin
 Conflicts: liblvr2-dev
 Replaces: liblvr2-dev
