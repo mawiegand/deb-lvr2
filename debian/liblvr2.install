@@ -1,4 +1,1 @@
-usr/lib/*/lib*.so
-usr/lib/libdracoenc.a
-usr/lib/libdracodec.a
-usr/lib/libdraco.a
+debian/lvr2/usr/lib/*/lib*.so usr/lib/
